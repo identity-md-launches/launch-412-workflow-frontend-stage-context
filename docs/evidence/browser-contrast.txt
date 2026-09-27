@@ -1,0 +1,41 @@
+{
+  "width": 390,
+  "overflow": false,
+  "pairs": [
+    {
+      "foreground": "body",
+      "background": "html",
+      "fg": "rgb(36, 39, 32)",
+      "bg": "rgb(244, 241, 233)",
+      "ratio": 13.423036148025458
+    },
+    {
+      "foreground": ".pot > p:last-child",
+      "background": ".round-card",
+      "fg": "rgb(91, 96, 85)",
+      "bg": "rgb(252, 250, 245)",
+      "ratio": 6.196028849774908
+    },
+    {
+      "foreground": ".ticket-card .purchase-note",
+      "background": ".ticket-card",
+      "fg": "rgb(69, 74, 62)",
+      "bg": "rgb(239, 170, 136)",
+      "ratio": 4.680719996366495
+    },
+    {
+      "foreground": ".ticket-card h2",
+      "background": ".ticket-card",
+      "fg": "rgb(36, 39, 32)",
+      "bg": "rgb(239, 170, 136)",
+      "ratio": 7.774128527667808
+    },
+    {
+      "foreground": ".dark",
+      "background": ".dark",
+      "fg": "rgb(252, 250, 245)",
+      "bg": "rgb(36, 39, 32)",
+      "ratio": 14.524323396340385
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "Temporary complete incremental submission bundle against the supplied source commit; not a workspace commit",
+  "baseCommit": "626e9c56939a86d30b897b87e4fa3054b99e1ece",
+  "bundleBytesExcludingThisReport": 1746833,
+  "allSnapshotWorkingFileBytesExcludingReport": 3422487,
+  "newOrChangedFilesExcludingReport": 61,
+  "budgetBytes": 8388608,
+  "reportReserveBytes": 4096,
+  "withinBudget": true,
+  "scopeCheck": "passed",
+  "protectedChanges": [],
+  "submodules": 0,
+  "dependencyOrCacheFiles": 0,
+  "exportBytes": 708971,
+  "exportAssets": 16,
+  "workspaceCommit": "blocked: .git is read-only"
+}

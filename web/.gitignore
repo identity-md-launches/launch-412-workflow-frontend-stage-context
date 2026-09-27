@@ -1,0 +1,7 @@
+node_modules/
+.cache/
+.vite/
+.npm/
+test-results/
+playwright-report/
+*.tsbuildinfo

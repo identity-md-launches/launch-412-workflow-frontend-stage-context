@@ -1,0 +1,69 @@
+{
+  "date": "2026-09-27T17:46:49.664Z",
+  "mode": "Read-only public RPC checks; no wallet, signing or broadcasts",
+  "results": [
+    {
+      "endpoint": "https://ethereum-sepolia-rpc.publicnode.com",
+      "status": "passed",
+      "chainId": 11155111,
+      "block": "11794917",
+      "token": "0xF5B6e3236ee84165b632Eb97F9E1454dFd697701",
+      "round": "0",
+      "deploymentBlock": "11794808",
+      "contracts": [
+        {
+          "name": "LaunchToken",
+          "address": "0xf5b6e3236ee84165b632eb97f9e1454dfd697701",
+          "codeBytes": 1722
+        },
+        {
+          "name": "BlockhashLottery",
+          "address": "0xdff52ca0cad623e7c2bb39bbb5aacb5cce00f5d7",
+          "codeBytes": 4134
+        }
+      ]
+    },
+    {
+      "endpoint": "https://rpc.sepolia.ethpandaops.io",
+      "status": "passed",
+      "chainId": 11155111,
+      "block": "11794917",
+      "token": "0xF5B6e3236ee84165b632Eb97F9E1454dFd697701",
+      "round": "0",
+      "deploymentBlock": "11794808",
+      "contracts": [
+        {
+          "name": "LaunchToken",
+          "address": "0xf5b6e3236ee84165b632eb97f9e1454dfd697701",
+          "codeBytes": 1722
+        },
+        {
+          "name": "BlockhashLottery",
+          "address": "0xdff52ca0cad623e7c2bb39bbb5aacb5cce00f5d7",
+          "codeBytes": 4134
+        }
+      ]
+    },
+    {
+      "endpoint": "https://sepolia.rpc.sentio.xyz",
+      "status": "passed",
+      "chainId": 11155111,
+      "block": "11794917",
+      "token": "0xF5B6e3236ee84165b632Eb97F9E1454dFd697701",
+      "round": "0",
+      "deploymentBlock": "11794808",
+      "contracts": [
+        {
+          "name": "LaunchToken",
+          "address": "0xf5b6e3236ee84165b632eb97f9e1454dfd697701",
+          "codeBytes": 1722
+        },
+        {
+          "name": "BlockhashLottery",
+          "address": "0xdff52ca0cad623e7c2bb39bbb5aacb5cce00f5d7",
+          "codeBytes": 4134
+        }
+      ]
+    }
+  ]
+}

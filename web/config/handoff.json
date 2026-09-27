@@ -1,0 +1,51 @@
+{
+  "chainId": 11155111,
+  "repoUrl": "https://github.com/identity-md-launches/launch-359-blockhashlottery",
+  "version": 1,
+  "launchId": "c6c2b1f5-7a27-44f2-9dd6-1287a9fbf034",
+  "manifest": {
+    "kind": "evm_project",
+    "pool": {
+      "fee": 3000,
+      "tickSpacing": 60,
+      "initialPrice": "79228162514264337593543950336",
+      "pairedCurrency": "0x0000000000000000000000000000000000000000"
+    },
+    "notes": "Sepolia test toy with no value. The pool pairs DRAW with native ETH and has no hook. BlockhashLottery stores the launch token immutably, needs no DRAW at deployment, and has no owner or initialization calls. Users acquire DRAW from the launch pool and approve it for ticket purchases; winnings and expired-round refunds are withdrawn through claim(). Future-blockhash randomness can be influenced by validators. The pinned launch policy governs the effective opening price when it specifies an initial market cap. Source publication, signed artifact linkage, admission and deployment are handled by services.",
+    "token": {
+      "name": "Draw",
+      "symbol": "DRAW",
+      "contract": "LaunchToken",
+      "decimals": 18
+    },
+    "contracts": [
+      {
+        "contract": "BlockhashLottery",
+        "constructorArgs": [
+          "$token"
+        ]
+      }
+    ]
+  },
+  "contracts": [
+    {
+      "name": "LaunchToken",
+      "txHash": "0x7e5b96766d6927922e8bcd4df7600b059c7c22d2d27105b975f7fdb4bdc9ca28",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+      "address": "0xf5b6e3236ee84165b632eb97f9e1454dfd697701",
+      "blockNumber": 11794808,
+      "creationCodeHash": "5c259b22721bead4c0d5f99fed8131852c09343c2e333408cf7095079f03dd43"
+    },
+    {
+      "name": "BlockhashLottery",
+      "txHash": "0x7e5b96766d6927922e8bcd4df7600b059c7c22d2d27105b975f7fdb4bdc9ca28",
+      "abiHash": "6720449f27804ba4e81d4ed82fa909e0d29ae0e5f4afa99376a0ba815937f504",
+      "address": "0xdff52ca0cad623e7c2bb39bbb5aacb5cce00f5d7",
+      "blockNumber": 11794808,
+      "creationCodeHash": "42e1a9d9a890f9502d86d4a11787a39d2349974407f70b699e63cc9295171814"
+    }
+  ],
+  "sourceCommit": "626e9c56939a86d30b897b87e4fa3054b99e1ece",
+  "abiInstructions": "Build ABIs from this exact source commit; compare canonicalKeccak(abi) with abiHash. Verify deployed code on the stated chain before enabling transactions.",
+  "attestationHash": "6936eb1a056cbe3f4c1111486c4997b3ecf885a853b7e6c1b0ce4085b9938c84"
+}

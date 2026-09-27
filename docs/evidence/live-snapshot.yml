@@ -1,0 +1,42 @@
+- generic [ref=e2]:
+  - link "Skip to content" [ref=e3] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e4]:
+    - link "DRAW home" [ref=e5] [cursor=pointer]:
+      - /url: "#main"
+      - generic [ref=e9]
+    - generic [ref=e11]:
+      - generic [ref=e12]
+      - button "Connect wallet" [ref=e14] [cursor=pointer]
+  - main [ref=e16]:
+    - generic [ref=e17]:
+      - generic [ref=e18]
+      - generic [ref=e21]
+    - generic:
+      - status
+    - generic [ref=e25]:
+      - 'region "Round #0" [ref=e141]'
+      - region "Make it a ticket." [ref=e48]
+    - region "Your wallet balances" [ref=e71]:
+      - generic [ref=e72]
+      - generic [ref=e75]
+      - generic [ref=e78]
+      - paragraph [ref=e81]
+    - generic [ref=e83]:
+      - region "Keep the draw moving." [ref=e84]
+      - region "Yours to claim." [ref=e103]
+    - region "Past winners" [ref=e116]:
+      - generic [ref=e117]
+      - generic [ref=e122]
+      - paragraph [ref=e145]: Scanned through block 11,794,965. Recent events may change during a chain reorganization.
+    - region "How the lottery works" [ref=e127]:
+      - generic [ref=e128]
+      - generic [ref=e130]
+      - generic [ref=e132]
+    - group [ref=e134]:
+      - generic "Experiment notes & deployment" [ref=e135] [cursor=pointer]
+  - contentinfo [ref=e136]:
+    - generic [ref=e137]: DRAW Small stakes. Open code.
+    - generic [ref=e138]:
+      - generic [ref=e139]: Block 11,794,965 · Live reads · refresh every 12s
+      - button "Refresh" [ref=e140] [cursor=pointer]

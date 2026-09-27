@@ -1,0 +1,20 @@
+import assert from 'node:assert/strict';
+import { readFileSync, statSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { abiHash, handoff, networkInput, out, readJSON, inventory, files } from './shared.mjs';
+
+const manifest = readJSON(resolve(out, 'imd-deployment.json'));
+for (const field of ['version', 'launchId', 'chainId', 'sourceCommit', 'attestationHash']) assert.equal(manifest[field], handoff[field]);
+assert.deepEqual(manifest.network, networkInput.network);
+assert.deepEqual(manifest.walletAddChain, networkInput.walletAddChain);
+assert.deepEqual(manifest.contracts.map(({ name, address, abiHash }) => ({ name, address, abiHash })), handoff.contracts.map(({ name, address, abiHash }) => ({ name, address, abiHash })));
+assert.deepEqual(manifest.assets, inventory());
+assert(manifest.assets.some(asset => asset.path === 'index.html'));
+assert(manifest.assets.length <= 128);
+for (const entry of [...manifest.assets.map(a => a.path), ...manifest.contracts.map(c => c.abiPath)]) assert(/^[\w./-]+$/.test(entry) && !entry.startsWith('/') && !entry.split('/').includes('..'));
+for (const contract of manifest.contracts) assert.equal(abiHash(readJSON(resolve(out, contract.abiPath))), contract.abiHash);
+for (const path of files(out)) assert(statSync(path).size <= 8388608);
+const bytes = files(out).reduce((sum, path) => sum + statSync(path).size, 0);
+assert(bytes < 32 * 1024 * 1024);
+assert(!readFileSync(resolve(out, 'index.html'), 'utf8').includes('src="/'));
+console.log(`Verified complete manifest: ${manifest.assets.length} assets, ${bytes} bytes including configuration.`);

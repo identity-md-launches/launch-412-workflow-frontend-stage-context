@@ -1,0 +1,111 @@
+{
+  "date": "2026-09-27T17:58:01.397Z",
+  "browser": "154.0.8037.0",
+  "mode": "production export; mocked RPC and browser wallet; no broadcasts",
+  "results": [
+    {
+      "name": "Subpath export, disconnected live reads, disabled actions and event winners",
+      "result": "passed"
+    },
+    {
+      "name": "Wallet connection and exact approval before buy",
+      "result": "passed"
+    },
+    {
+      "name": "Buy receipt reports actual mining round; balance and allowance refresh",
+      "result": "passed"
+    },
+    {
+      "name": "Ticket limits, fractions, exponential notation and insufficient balance",
+      "result": "passed"
+    },
+    {
+      "name": "Wallet rejection preserves balances and allows retry",
+      "result": "passed"
+    },
+    {
+      "name": "Simulation revert never asks for a signature",
+      "result": "passed"
+    },
+    {
+      "name": "Settle credits prize and prevents a second settlement",
+      "result": "passed"
+    },
+    {
+      "name": "Expired-round lookup, refund credit, double-refund guard, and claim",
+      "result": "passed"
+    },
+    {
+      "name": "Future round validation keeps current data and focuses field",
+      "result": "passed"
+    },
+    {
+      "name": "Unknown chain offers exact add-chain data then switches again",
+      "result": "passed"
+    },
+    {
+      "name": "Account removal clears wallet state and disables transactions",
+      "result": "passed"
+    },
+    {
+      "name": "Missing contract code blocks transactions",
+      "result": "passed"
+    },
+    {
+      "name": "RPC chain mismatch blocks transactions",
+      "result": "passed"
+    },
+    {
+      "name": "Token pointer mismatch blocks transactions",
+      "result": "passed"
+    },
+    {
+      "name": "RPC failure shows recoverable error",
+      "result": "passed"
+    },
+    {
+      "name": "ABI tampering fails closed",
+      "result": "passed"
+    },
+    {
+      "name": "Missing browser wallet explains recovery",
+      "result": "passed"
+    },
+    {
+      "name": "Draw boundary: strict > drawBlock, inclusive +256, expiry at +257",
+      "result": "passed"
+    },
+    {
+      "name": "Reverted receipt is not reported as success",
+      "result": "passed"
+    },
+    {
+      "name": "Stale reads pause actions until a fresh snapshot",
+      "result": "passed"
+    },
+    {
+      "name": "History scans every chunk from deployment without duplicate winners",
+      "result": "passed"
+    },
+    {
+      "name": "Recent event blocks are re-queried when the head advances",
+      "result": "passed"
+    },
+    {
+      "name": "Desktop, intermediate, mobile, 320px reflow, keyboard, reduced motion and axe",
+      "result": "passed"
+    }
+  ],
+  "capture": {
+    "fonts": {
+      "dmSans": true,
+      "spaceGrotesk": true
+    },
+    "axe": {
+      "violations": [],
+      "passes": 28
+    },
+    "consoleErrors": [],
+    "resourceFailures": []
+  }
+}

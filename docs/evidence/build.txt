@@ -1,0 +1,38 @@
+
+> draw-lottery-web@1.0.0 build
+> npm run typecheck && vite build && node scripts/export.mjs
+
+
+> draw-lottery-web@1.0.0 typecheck
+> tsc --noEmit
+
+vite v8.3.1 building client environment for production...
+transforming...
+✓ 438 modules transformed.
+rendering chunks...
+computing gzip size...
+../dist/index.html                                              0.78 kB │ gzip:   0.45 kB
+../dist/assets/space-grotesk-latin-700-normal-RjhwGPKo.woff2   12.84 kB
+../dist/assets/space-grotesk-latin-500-normal-lFbtlQH6.woff2   13.31 kB
+../dist/assets/space-grotesk-latin-400-normal-CJ-V5oYT.woff2   13.38 kB
+../dist/assets/dm-sans-latin-400-normal-CW0RaeGs.woff2         14.20 kB
+../dist/assets/dm-sans-latin-500-normal-B9HHJjqV.woff2         14.30 kB
+../dist/assets/dm-sans-latin-700-normal-DvUfVpUG.woff2         14.34 kB
+../dist/assets/index-kourPXfJ.css                              15.27 kB │ gzip:   3.87 kB
+../dist/assets/ccip-DVOLkwia.js                                 2.83 kB │ gzip:   1.30 kB
+../dist/assets/index-C-x130G8.js                              532.47 kB │ gzip: 162.70 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 478ms
+Verified LaunchToken at 626e9c56939a86d30b897b87e4fa3054b99e1ece: 38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee
+Verified BlockhashLottery at 626e9c56939a86d30b897b87e4fa3054b99e1ece: 6720449f27804ba4e81d4ed82fa909e0d29ae0e5f4afa99376a0ba815937f504
+Verified complete manifest: 16 assets, 708971 bytes including configuration.
+
+> draw-lottery-web@1.0.0 verify
+> node scripts/verify.mjs
+
+Verified complete manifest: 16 assets, 708971 bytes including configuration.
